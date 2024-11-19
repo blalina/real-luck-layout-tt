@@ -4,4 +4,4 @@ This is a pet project based on a template https://www.figma.com/design/l47WOfIQY
 
 ## GitHub Pages
 
-You can take a look at the GitHub pages -
+You can take a look at the GitHub pages - https://blalina.github.io/real-luck-layout-tt/
