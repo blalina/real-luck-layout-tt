@@ -8,6 +8,33 @@
     </head>
     <body>
         <header class="header">
+            <div class="header-wrapper">
+                <a class="header__logo-link" href="#">
+                    <img class="header__logo-img" src="src/assets/images/circle-icon.svg" alt="logo">
+                </a>
+                <div class="header__nav-wrapper">
+                    <nav class="header__nav">
+                        <ul class="header__list">
+                            <li class="header__item header__item-active">
+                                <a href="#">Главная</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#">О нас</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#">Контакты</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#">Поиск</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__contact">
+                        <img src="src/assets/images/phone-call-icon.svg" alt="phone call icon">
+                        <a href="tel:+79878878787">+7 (987) 887-87-87</a>
+                    </div>
+                </div>
+            </div>
             <div class="header-wrapper__image">
                 <picture class="header__images">
                     <source media="(max-width: 320px)" srcset="./src/assets/images/mobile-image-320.svg">
@@ -18,50 +45,124 @@
         </header>
         <main class="main-content">
             <div class="main-wrapper">
-            <section class="articles">
-                <article class="articles__item articles__item--wide"></article>
-                <article class="articles__item articles__item--large"></article>
-                <article class="articles__item articles__item--medium"></article>
-                <article class="articles__item articles__item--medium-alt"></article>
-                <article class="articles__item articles__item--small"></article>
-                <article class="articles__item articles__item--small-alt"></article>
-            </section>
-            <nav class="pagination">
-                <ul class="pagination__list pagination__list--hidden">
-                    <li class="pagination__item pagination__item--active"><a href="#">1</a></li>
-                    <li class="pagination__item"><a href="#">2</a></li>
-                    <li class="pagination__item"><a href="#">3</a></li>
-                    <li class="pagination__item"><a href="#">4</a></li>
-                    <li class="pagination__item"><a href="#">...</a></li>
-                    <li class="pagination__item"><a href="#">10</a></li>
-                    <li class="pagination__item pagination__item--btn"><a href="#">Следующая ></a></li>
-                </ul>
-                <button class="load-more load-more--active">
-                    Показать ещё 6 
-                    <img src="./src/assets/images/refresh-arrows-circle-with-clockwise-rotation.svg" alt="refresh arrows circle with clockwise-rotation">
-                </button>
-            </nav>
-            <section class="news">
-                <h2 class="news__title">Популярные новости</h2>
-                <ul class="news__list">
-                    <li class="news__item">ITAM&SAMDay – самая настоящая удача!<span>13 дек 2020</span></li>
-                    <li class="news__item">Секреты лицензирования. Всё, что вы хотели знать про Microsoft, SAP и ...<span>10 дек 2020</span></li>
-                    <li class="news__item">Менеджмент XXI века. Надо ли готовиться к изменениям или мы давно ...<span>5 дек 2020</span></li>
-                </ul>
-            </section>
-            <section class="subscription">
-                <h2 class="subscription__title">Подписка на рассылку</h2>
-                <form class="subscription__form" action="/subscribe">
-                    <input class="subscription__input" type="email" placeholder="Email@gmail.com">
-                    <button class="subscription__button" type="submit">
-                        Подписаться
-                        <img src="./src/assets/images/right-arrow-icon.svg" alt="right arrow icon">
+                <section class="articles">
+                    <article class="articles__item articles__item--wide">
+                        <div class="articles-wrapper">
+                            <span class="articles__category">Категория 1</span>
+                            <span class="articles__date">13 дек 2020</span>
+                        </div>
+                        <h2 class="articles__title">Управление ИТ-активами – скучная рутина или творческая задача?</h2>
+                        <p class="articles__text">Размышляя об управлении ИТ-активами, я вспомнил один учебный пример. Менеджер по ИТ-мощностям в крупной компании периодически готовил толстенный отчёт руководству. В очередной раз он не принёс отчёт, решив проверить, нужен ли он вообще. </p>
+                    </article>
+                    <article class="articles__item articles__item--large">
+                        <div class="articles-wrapper">
+                            <span class="articles__category">Категория 1</span>
+                            <span class="articles__date">13 дек 2020</span>
+                        </div>
+                        <h2 class="articles__title">Управление ИТ-активами – скучная рутина или творческая задача?</h2>
+                        <p class="articles__text">Размышляя об управлении ИТ-активами, я вспомнил один учебный пример. Менеджер по ИТ-мощностям в крупной компании периодически готовил толстенный отчёт руководству. В очередной раз он не принёс отчёт, решив проверить, нужен ли он вообще. </p>
+                    </article>
+                    <article class="articles__item articles__item--medium">
+                        <div class="articles__category-wrapper">
+                            <span class="articles__category">Категория 1</span>
+                        </div>
+                        <h2 class="articles__title">ITAM&SAMDay – самая настоящая удача!</h2>
+                        <span class="articles__date">13 дек 2020</span>
+                    </article>
+                    <article class="articles__item articles__item--medium-alt">
+                        <div class="articles__category-wrapper">
+                            <span class="articles__category">Очень длинная категория 2</span>
+                        </div>
+                        <h2 class="articles__title">Управление ИТ-активами – скучная рутина или творческая задача?</h2>
+                        <span class="articles__date">13 дек 2020</span>
+                    </article>
+                    <article class="articles__item articles__item--small">
+                        <div class="articles-wrapper">
+                            <span class="articles__category">Категория 1</span>
+                            <span class="articles__date">13 дек 2020</span>
+                        </div>
+                        <h2 class="articles__title">Управление ИТ-активами – скучная рутина или творческая задача слово слово и еще длинное слово после чего ...</h2>
+                    </article>
+                    <article class="articles__item articles__item--small-alt">
+                        <div class="articles-wrapper">
+                            <span class="articles__category">Категория 1</span>
+                            <span class="articles__date">13 дек 2020</span>
+                        </div>
+                        <h2 class="articles__title">ITAM&SAMDay – самая настоящая удача!</h2>
+                    </article>
+                </section>
+                <nav class="pagination">
+                    <ul class="pagination__list pagination__list--hidden">
+                        <li class="pagination__item pagination__item--active">
+                            <a href="#">1</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="#">2</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="#">3</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="#">4</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="#">...</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="#">10</a>
+                        </li>
+                        <li class="pagination__item pagination__item--btn">
+                            <a href="#">Следующая></a>
+                        </li>
+                    </ul>
+                    <button class="load-more load-more--active">
+                        Показать ещё 6 
+                        <img src="./src/assets/images/refresh-arrows-circle-with-clockwise-rotation.svg" alt="refresh arrows circle with clockwise-rotation">
                     </button>
-                </form>
-            </section>
-        </div>
+                </nav>
+                <section class="news">
+                    <h2 class="news__title">Популярные новости</h2>
+                    <ul class="news__list">
+                        <li class="news__item">ITAM&SAMDay – самая настоящая удача!<span>13 дек 2020</span></li>
+                        <li class="news__item">Секреты лицензирования. Всё, что вы хотели знать про Microsoft, SAP и ...<span>10 дек 2020</span></li>
+                        <li class="news__item">Менеджмент XXI века. Надо ли готовиться к изменениям или мы давно ...<span>5 дек 2020</span></li>
+                    </ul>
+                </section>
+                <section class="subscription">
+                    <h2 class="subscription__title">Подписка на рассылку</h2>
+                    <form class="subscription__form" action="/subscribe">
+                        <input class="subscription__input" type="email" placeholder="Email@gmail.com">
+                        <button class="subscription__button" type="submit">
+                            Подписаться
+                            <img src="./src/assets/images/right-arrow-icon.svg" alt="right arrow icon">
+                        </button>
+                    </form>
+                </section>
+            </div>
         </main>
         <footer class="footer">
+            <div class="footer__container">
+                <a class="footer__logo-link" href="#">
+                    <img class="footer__logo-img" src="src/assets/images/circle-icon.svg" alt="logo">
+                </a>
+                <nav class="footer__nav">
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#">О нас</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#">Галерея</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#">Новости</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="footer__copyright">ООО “Организация” 2020. Все права защищены</div>
+            </div>
         </footer>
     </body>
 </html>
